@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == RESULT_OK) {
                 binding.edit.setText(result.data?.getStringExtra(MA_SA_TEXT))
-            }
+            }//
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
